@@ -3,29 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./scripts/script.js" defer></script>
     <link rel="stylesheet" href="./styles/style.css">
-    <title>Document</title>
+    <title>Utility</title>
 </head>
 <body>
-    <header>
-        <span class="bold">
+    <header class="flex spaceBetween bar">
+        <a href="./" class="bold">
             Header
-        </span>
+        </a>
+
+        <div class="flex gap30 headerItems">
+            <a href="./">Home</a>
+            <a href="#">About</a>
+            <a href="#">Profile</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+            <a href="#">Sign Up</a>
+        </div>
     </header>
+    
+    <main class="column flex gap20 m20">
 
-    <main class="column flex gap20">
-
-        <section class="bold heroBanner w100">
+        <section class="bold heroBanner w100 center">
             Hero = Banner
         </section>
 
         <section class="content gap20 grid rowSection w100">
 
-            <aside class="bold">
+            <aside class="flex bold center w100">
                 Aside = Sidebar
             </aside>
 
-            <article class="bold">
+            <article class="flex bold center w100">
                 Article
             </article>
 
@@ -33,7 +44,7 @@
 
     </main>
 
-    <footer>
+    <footer class="bar flex spaceBetween">
         <span class="bold">
             Footer
         </span>
